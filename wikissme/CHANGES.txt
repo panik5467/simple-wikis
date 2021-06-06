@@ -1,0 +1,209 @@
+CHANGES
+
+2009-11-02
+* Changed global and template variable names: DEBUG to DEBUG_MESSAGES_HTML, 
+  WIKI_TITLE to SITE_TITLE, MENU to PAGE_MENU, 
+  WIKI_VERSION to WIKISSME_VERSION, HISTORY_LINK to HISTORY_LINK_HTML, 
+  PAGE_TIME to PAGE_DATEMODIFIED, RECENT to RECENTCHANGES_LINK_HTML, 
+  HOME to HOME_LINK_HTML, HELP to HELP_LINK_HTML, ERROR to ERROR_MESSAGES_HTML, 
+  EDIT to EDIT_LINK_HTML, PAGE_TITLE_BRUT to PAGE_TITLE_HTML, 
+  DATE to SERVER_DATETIME, IP to SERVER_REMOTEADDR, 
+  COOKIE to ERASECOOKIE_LINK_HTML.
+* Added more comments in the code.
+* Added global/template variables: 
+* Added to the request parameter theme to override the config.
+* Reformatting code, for consistency.
+* Added to the generated HTML new styles and more attributes.
+* Changed style of generated HTML code.
+* Changed and improved paragraphs handling.
+* Changed the link handling routines.
+* Added more and updated existing localization labels.
+* Fixed typos in the comments.
+* Added more comments in the code.
+* Refactoring - variable names for consistency.
+* The template TOC tag PAGE_TOC is now replaced in the TOC plugin.
+* Added to the reposotory file.php and image.php to handle files and images.
+* Rewritten template to use more DIV's instead of tables.
+* Rewritten stylesheet to use new templates.
+* The original (Lion-like) theme renamed to "origilion".
+* Added new theme "mobissme" intended for mobile devices.
+* Added to the themes new images.
+
+2009-08-16
+* Minor changes in the text.
+* Removed some debug prints.
+* Added to the performance log remote IP address.
+* Updated pages.
+* Added pages.
+
+2009-7-26
+* Changed in the wikissme theme style CSS the width of the "pre" tag.
+* Added PLUGIN_RSS_ACTIVE prameter to turn on/aff the RSS plugin.
+
+2009-07-25
+* Added to the repository new data sub-folders.
+* Updated some README files.
+* Added DATA_FOLDER as a base for file storage operations.
+* Removed unneeded and commented source code.
+* Added some more comments.
+* Removed the use of "use-datafolder" parameter.
+* Changed a little the style of comments screen.
+* Changed in plugin Recent the time format.
+* Changed in plugin Recent the style of files list - uses table now.
+* Pugin Menu now uses the function Page::filepath to get the file.
+* From the dfault template removed the TRANSLATE tag.
+* The search functionality now could read from data folder and sub-folders.
+* The history functionality now could read/write from/to data folder and sub-folders.
+* Improved function authenticated not to allow empty password in the configuration.
+
+2009-07-18
+* Updated config.php file, removed unused parameters, improved comments.
+* Updated plugins configuration files, added more settings.
+* Added to the Page class new static function filename that generates file name from page name.
+* Added to the Page class new static function filepath that generates full path to the page file by its name and standard path components.
+* Added to the Page class new function getFilepath that returns the full page file path.
+* Reduced the use of PAGES_FOLDER global variable.
+* Removed the use of PAGE_NAME global variable.
+* Removed from PageReader class functions filepath and filename, implemented differently in the Page class.
+* Removed from PageReader class the usage of removed function and replaced by the new ones.
+* Removed old unused code and comments.
+* Removed unused global variables.
+* Some small code logics improvements.
+* Fixed some small bugs.
+* Add in Comments class new function files_path.
+* Add in Comments class new function parse_filename.
+* Implemented in Comments class usage of the new functions.
+* Updated TODO items.
+* Fixed the distrib2 script (the one that build archives out of repository) to work with "ext" method under Windows.
+
+2009-07-10
+* Changed in function authenticated code formatting.
+* Fixed access right in the .htaccess file for locale folder.
+* Updated README.txt file with project description.
+Localization:
+* Changet a little the formating of the original localization strings array.
+* Fixed one variable in the original localization strings array.
+* Implemented new style of localization using string-id's.
+* Added new function localize.
+* Added new function localize_list.
+* Updated localization mechanism using the new localize function.
+* Added to the repository new localization files in the locs folder.
+
+2009-07-05
+* Updated VERSION file.
+
+2009-07-04
+* Added plugin-comments.ini-distrib file.
+Changes in plugin Blog:
+* Updated comments in the source code.
+* Added new function files_path.
+* Added new function parse_filename.
+* Added new function parse_pagename.
+* Added new function recent_list.
+* Added new function recent_view.
+* To be removed function recent.
+* Replaced function recent with recent_view.
+* Removed unused variables.
+* Updated function trigger_read to use new functions.
+* Updated function trigger_write to use new functions.
+* Updated function trigger_format to use new functions.
+* Updated function trigger_inline to use new functions.
+Changes in plugin Comments:
+* Updated comments in the source code.
+* Added configuration file functionality.
+* Added new function init to take care of new functionalities.
+* Updated function recent_view to use new functions.
+* Updated function recent_list to use new functions.
+* Updated function trigger_action to use new functions.
+
+2009-05-31
+* Changed name, CONTENT to PAGE_CONTENT.
+* Plugin Test reanamed to TestPlugin.
+* Changed templates - TIME tag changed to PAGE_TIME, CONTENT to PAGE_CONTENT.
+* Changed templates - fixed some HTML tags.
+* Added more TODO items.
+* Implemented Captcha using modified white-hat-web-design.co.uk PHP code.
+* Added to the repository new code that implements Captcha the functionality.
+* Added new module Captcha that implements some important captcha functions.
+* Added new object - Page -  that represents a page and its content.
+* Added new classes - PageReader and PageWriter - that take care of the reading
+  and writing operations for the new Page object.
+* Replaced page_content with the new page->content construction.
+* Implemented new type of objects - modules.
+* Added new classes Module and AbstractModule.
+* Added new class ModulesManager that takes care of modules loading, etc.
+* Added new module TestModule.
+* Created new plugin ModulesInfo that prints out some modules information.
+* Added in config file new MODULES_CONFIG_FOLDER parameter.
+* Removed, in WiKissMe, page_content as initialization parameter.
+* Implemented, in WiKissME, new errors schema: addError, hasErrors, getErrors.
+* Added, in WiKissMe, newly implemented objects: Page, PagerReader, pageWriter, 
+  ModulesManager.
+* Added more information to the VERSION file - status "alpha".
+Changes in wiki.php script:
+* Added starting PHP session.
+* Fixed some includes.
+* Changed name, CONTENT to PAGE_CONTENT.
+* Remove unnecessary local variables.
+* Added new TODO items.
+* Added initiialization for new objects: Headings, Page, PageReader, 
+  PageWriter, ModulesManager.
+* Improvements in the code.
+* Improved authentication schema while writing a page using WritePermited flag
+* Used new error reporting schema.
+* Changed variable - TIME to PAGE_TIME.
+Changes in Plugins:
+* The object wikissme is passed now by reference in the plugin consructor.
+* Remove unnecessary global variables.
+* Some functions made private.
+* Implemented Captcha functionality for comments.
+* Invoking isActive() method instead of active variable.
+* Added some English comment to the French text.
+
+2009-05-19
+* Removed unused commented code.
+* Added few new comments.
+* Fixed few typos.
+* Added few new TODO items.
+* Updated CHANGES file.
+
+2008-05-18
+* Added to the repository, PluginsManager.php and PluginsProcessor.php files.
+* Added to the repository, configuration "-distrib" files.
+* Renamed, all new-style plugins - prefix "wkp_" removed.
+* Added for theme "wikissme" new logo label3-206x50.png file.
+* In the constructor of AbstractOldPlugin and  AbstractPlugin classes, the 
+  wikissme object is passed now by reference.
+* In class Headings, function test moved to different position in the file, for 
+  consistency.
+* Removed some unnecessary debug code.
+* Wiki version is now read from the VERSION file.
+* Implemented PluginsManager tha takes care of the plugins loading and other 
+  things.
+* Implemented PluginsProcessor that takes care of plugins methods execution and 
+  few other things.
+* List of old-style plugins now kept in a separate array.
+* Headings object is now private variable for the WiKissMe object.
+* The new PluginsManager and PluginsProcessor objects are now set as 
+  variables/properties within WiKissMe object.
+* Commented unused old code that is replaced by new implementation, should be 
+ removed on next commit.
+* The object PluginsProcessor now invokes the plugins triggers.
+* For invoking the old-style plugins now the plugins_old_call_method function 
+  is used.
+* Added some new comments, removed some old ones.
+* The Config old-style plugin now extend AbstractOldPlugin.
+* The list of plugins in the Config class is now fetched from the wikissme 
+  object.
+* The MENU_PAGE defiition moved into the Menu class, should be put in config.
+* In the constructor of the Menu class the wikissme object is now passed by 
+  reference.
+* The class Upload now extends AbstractOldPlugin.
+* In the Upload plugin added wikissme/script_basename to all hrefs and forms.
+* Upload and folder browsing works again.
+* Added more text to REAM files.
+* Fixed some typos in the text files.
+* Added more TODO items, in the text file and in the source code.
+
+-----
+$Id: CHANGES.txt,v 1.8 2009/11/02 21:33:12 neven Exp $

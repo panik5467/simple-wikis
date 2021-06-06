@@ -1,0 +1,324 @@
+
+body
+{
+	background-color: #828A99;
+	font-family: Georgia, Times, Serif;
+	font-size: 10pt;
+	/* line-height: 14pt; */
+	margin: 6px;
+}
+
+img
+{
+	border: 0px;
+	margin: 0px;
+}
+
+pre
+{
+	background: #f8f8ff;
+	margin: 6px;
+	padding: 6px;
+	border: 1px dotted #ccc;
+	float: left;
+	clear: both;
+}
+
+code
+{
+	font-family: "Courier New", monospace;
+	font-size: 10pt;
+}
+
+hr
+{
+	height: 1px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+
+form
+{
+	display: inline
+}
+
+a
+{
+	color: #333C4D;
+}
+
+a.pending
+{
+	color: #7F4736;
+}
+
+a.url
+{
+	color: #808080;
+}
+
+a:hover
+{
+	color: #57A2D4;
+	background: inherit;
+}
+
+div.message-error
+{
+	color: #ff6633;
+	font-weight: bold;
+	margin: 8px;
+	padding: 8px;
+	border: 2px solid #ffddcc !important;
+}
+
+/* -- Header -- */
+
+div.site-header
+{
+	color: #999999;
+	background: #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.site-header a
+{
+	color: #dddddd;
+}
+
+div.site-header h1
+{
+	font-size: 160%;
+}
+
+div.site-header img, p, h1
+{
+	margin: 6px;
+	padding: 4px;
+}
+
+img.header-logo
+{
+	border: none;
+}
+
+div.header-menu
+{
+	color: #000000;
+	background: #cccccc;
+	margin: 0px;
+	padding: 4px;
+	border-bottom: 1px dashed #666666;
+}
+
+div.header-menu a
+{
+	color: #666666;
+}
+
+/* -- Content -- */
+
+div.page-content
+{
+	background: #ffffff;
+	padding: 6px;
+	margin: 0px;
+	border: none;
+}
+
+p.content-paragraph
+{
+	text-align: justify;
+	/* border: 1px dotted #cccccc; */
+	clear: left;
+}
+
+/* -- Plugin wkp_Menu -- */
+
+div.page-menu
+{
+	color: #000000;
+	background: #cccccc;
+	margin: 6px;
+	margin-left: 12px;
+	padding: 12px;
+	border: 1px solid #000000;
+	float: right;
+}
+
+div.page-menu hr
+{
+	height: 2px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+
+div.page-menu ul
+{
+	list-style-type: square;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+hr.menu {
+	height: 3px;
+	color: #999999;
+	background: #999999;
+	border: none;
+}
+
+/* -- Headings -- */
+
+h1.heading, h2.heading, h3.heading, 
+h4.heading, h5.heading, h6.heading
+{
+	font-family: Georgia, Times, Serif !important;
+	border-bottom: 1px solid #666666;
+	padding-bottom: 6px;
+}
+
+h1.heading { padding-left: 1em; }
+h2.heading { padding-left: 2em; }
+h3.heading { padding-left: 3em; }
+h4.heading { padding-left: 4em; }
+h5.heading { padding-left: 5em; }
+h6.heading { padding-left: 6em; }
+
+/* -- Plugin TOC -- */
+
+#page-toc
+{
+	background: white;
+	margin: 6px;
+	margin-left: 12px;
+	padding: 12px;
+	border: 1px dashed #11141A;
+	float: right;
+}
+
+div.page-toc-h1
+{
+	font-size: 95%;
+	padding-left: 0em;
+}
+
+div.page-toc-h2
+{
+	font-size: 90%;
+	padding-left: 1em;
+}
+
+div.page-toc-h3
+{
+	font-size: 85%;
+	padding-left: 2em;
+}
+
+div.page-toc-h4
+{
+	font-size: 80%;
+	padding-left: 3em;
+}
+
+div.page-toc-h5
+{
+	font-size: 75%;
+	padding-left: 4em;
+}
+
+div.page-toc-h6
+{
+	font-size: 70%;
+	padding-left: 5em;
+}
+
+/* -- Footer -- */
+
+div.site-footer
+{
+	background: #cccccc;
+	margin: 0px;
+	padding: 6px;
+	border-top: 1px dashed #666666;
+	clear: both;
+}
+
+div.site-footer *
+{
+	color: #666666;
+}
+
+/* -- END -- */
+
+/* Plugin wkp_Tables */
+
+table.wikitable {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+table.wikitable td {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+table.wikitable th {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+  background: #eee;
+  font-weight: bold;
+  color: black;
+}
+
+th
+{
+padding-left: 1em;
+background: #333C4D;
+color: white;
+text-align: left;
+border-bottom: 1px dashed #11141A;
+}
+
+th h1 {
+/* font-family: "Futura Condensed", Futura, sans-serif !important; */
+/* font-family: Times, Serif !important; */
+font-weight: bolder;
+padding-top: 10px;
+padding-bottom: 4px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+th a {
+text-decoration: none;
+color: white !important;
+}
+
+th p {
+font-size: 85%;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 2em;
+}
+
+.pageLinks {
+padding-left: 1em;
+padding-right: 1em;
+font-size: 85%;
+margin-top: 0;
+margin-bottom: 0;
+background-color: #eee;
+color: #666;
+}
+.pageLinks a {
+font-weight: bold;
+text-decoration: none;
+}

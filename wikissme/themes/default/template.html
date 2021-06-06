@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{WIKI_LANG}" lang="{WIKI_LANG}">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{SITE_TITLE} - {PAGE_TITLE_HTML}</title>
+	<style type="text/css"> @import "{THEME_PATH}/style.css"; </style>
+	{RSS}
+</head>
+<body>
+
+<div class="site-header">
+	<img align="right" class="header-logo" src="{THEME_PATH}/label3-206x50.png" />
+	<h1>{SITE_TITLE} // {PAGE_NAME}</h1>
+	<p>{INFOLABEL_LASTMODIFIED} {PAGE_DATEMODIFIED}</p>
+	
+	<div class="header-menu">
+		<div style="float: left;">
+			{HOME_LINK_HTML} {/ RECENTCHANGES_LINK_HTML}
+		</div>
+		<div style="text-align: right;">
+			{EDIT_LINK_HTML} {(HELP_LINK_HTML)} {/ HISTORY_LINK_HTML}
+		</div>
+	</div>
+</div>
+
+{ERROR_MESSAGES_HTML}
+<div class="page-menu">{PAGE_MENU}</div>
+{PAGE_TOC}
+<div class="page-content">{PAGE_CONTENT}</div>
+{DEBUG_MESSAGES_HTML}
+
+<div class="site-footer">
+	<div style="float: left; text-align: left">{SEARCH_FORM_HTML}</div>
+	<div style="float: right; text-align: right;">{EDIT_LINK_HTML} {(HELP_LINK_HTML)} {/ HISTORY_LINK_HTML}</div>
+	<div style="text-align: center;">
+		Powered by WiKissMe [:*] version {WIKISSME_VERSION}, Theme: WiKissMe<br />
+		{SERVER_DATETIME} -- {SERVER_REMOTEADDR} {ERASECOOKIE_LINK_HTML}
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+Development
+
+
+All source code and other text files should contain a branding note such as this:
+
+ *  WiKissMe
+
+All source code and other text files should contain a copyright note such as this:
+
+ *  Copyright (c) 2008-2009 by Neven Boyanov (Boyanov.Org)
+ *  Licensed under GNU/GPLv2 - http://www.gnu.org/licenses/
+
+In source code files short terms could be included such us these:
+
+ *  This program is distributed under the terms of the License,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty
+ *  of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+ *  the License for more details.
+
+All source code files that are derivatives from someone else's work should 
+include a note about the original file and author.
+
+ *  Based on WiKiss code and partially on TigerWiki and other derivatives.
+
+For the purpose of automated documentation generation these tags should be added:
+
+ *  @package WiKissMe
+ *  @version $Id: DEVELOPMENT.txt,v 1.1 2009/07/04 15:33:16 neven Exp $
+ *  @author Neven Boyanov
+
+
+-----
+$Id: DEVELOPMENT.txt,v 1.1 2009/07/04 15:33:16 neven Exp $

@@ -1,0 +1,239 @@
+/* Plugin wkp_Tables */
+table.wikitable {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+table.wikitable td {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+table.wikitable th {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+  background: #eee;
+  font-weight: bold;
+  color: black;
+}
+
+/* Table Of Content */
+
+div.content-toc
+{
+	border: 1px dashed #11141A;
+	float: right;
+	padding: 1em;
+	margin-left: 10px;
+	background: white;
+}
+
+h1.content-toc
+{
+	font-size: 95%;
+	padding-left: 0em;
+	border-bottom: none;
+}
+
+h2.content-toc
+{
+	font-size: 90%;
+	padding-left: 1em;
+	border-bottom: none;
+}
+
+h3.content-toc
+{
+	font-size: 85%;
+	padding-left: 2em;
+	border-bottom: none;
+}
+
+h4.content-toc
+{
+	font-size: 80%;
+	padding-left: 3em;
+	border-bottom: none;
+}
+
+h5.content-toc
+{
+	font-size: 75%;
+	padding-left: 4em;
+	border-bottom: none;
+}
+
+h6.content-toc
+{
+	font-size: 70%;
+	padding-left: 5em;
+	border-bottom: none;
+}
+
+/* --  -- */
+
+img {
+	border: 0px;
+	margin: 0px;
+}
+
+body {
+background-color: #828A99;
+/* font-family: Trebuchet, "Trebuchet MS", sans-serif; */
+font-family: Georgia, Times, Serif;
+font-size: 14pt;
+line-height: 14pt;
+}
+
+pre
+{ 
+border: 1px dotted #ccc;
+padding: 4px;
+width: 640px;
+overflow: auto;
+}
+
+code
+{
+font-family: "Courier New", monospace;
+font-size: 12px;
+}
+
+a {
+color: #333C4D;
+}
+
+a.pending {
+color: #7F4736;
+}
+
+a.url {
+color: #808080;
+}
+
+a:hover {
+color: #57A2D4;
+background: inherit;
+}
+
+th
+{
+padding-left: 1em;
+background: #333C4D;
+color: white;
+text-align: left;
+border-bottom: 1px dashed #11141A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+border-bottom: 1px solid #999999;
+padding-bottom: 6px;
+font-family: Georgia, Times, Serif !important;
+}
+
+th h1 {
+/* font-family: "Futura Condensed", Futura, sans-serif !important; */
+/* font-family: Times, Serif !important; */
+font-weight: bolder;
+padding-top: 10px;
+padding-bottom: 4px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+th a {
+text-decoration: none;
+color: white !important;
+}
+
+th p {
+font-size: 80%;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 2em;
+}
+
+#mainTable {
+border: 1px solid #11141A;
+}
+
+.pageLinks {
+padding-left: 1em;
+padding-right: 1em;
+font-size: 80%;
+margin-top: 0;
+margin-bottom: 0;
+background-color: #eee;
+color: #666;
+}
+.pageLinks a {
+font-weight: bold;
+text-decoration: none;
+}
+
+#headerLinks td {
+border-bottom: 1px dashed #ccc !important;
+}
+
+#footerLinks td {
+border-top: 1px dashed #ccc !important;
+}
+
+#mainContent {
+font-size: 90%;
+padding: 1em;
+background-color: white;
+}
+
+#mainContent h2:first-child {
+margin-top: 0px;
+}
+
+div.message-error
+{
+	color: #ff6633;
+	font-weight: bold;
+	margin: 8px;
+	padding: 8px;
+	border: 2px solid #ffddcc !important;
+}
+
+form {
+display: inline
+}
+
+/* wkp_Menu */
+/* Table Of Content */
+#menu {
+   border: 1px dashed white;
+   float:right;
+   padding: .5em;
+   background: #333C4D;
+   color: white;
+   font-weight:bold;   
+   margin-left: 12px;
+}
+
+#menu ul {
+   list-style: none;
+   margin:0;
+   padding:0;
+   
+}
+
+#menu a {
+   color: white;
+
+}
+
+hr {
+	height: 1px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+

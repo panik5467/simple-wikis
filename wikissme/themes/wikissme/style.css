@@ -1,0 +1,364 @@
+
+/* -------------------------------------------------------------------------- */
+
+html
+{
+	font-family: Georgia, Times, Serif;
+	font-size: 11pt;
+	color: #333333;
+	background: #ffffee;	/* NOTE: should match body.border color */
+	height: 100%;
+}
+
+body
+{
+	background: #33cc33;	/* This is the thin border at body-frame.margin */
+	border: 12px solid #ffffee;	/* NOTE: should match html.background */
+	border-left-width: 18px;
+	border-right-width: 24px;
+	margin: 0;
+	padding: 0;
+	position: static;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#body-frame
+{
+	background: #eeffee;
+	position: relative;
+	border: 6px solid #ff3333;
+	border-left-width: 12px;
+	border-right-width: 24px;
+	margin: 1px;	/* This is the thin border with body.background color */
+	padding: 12px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#site-header
+{
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 6px;
+}
+
+#site-header a
+{
+	color: #000000;
+}
+
+#site-header h1
+{
+	font-size: 160%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#site-header img, p
+{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+#site-menu
+{
+	color: #000000;
+	border-top: 1px dotted #666666;
+	margin: 0px;
+	padding: 0px;
+}
+
+#site-footer
+{
+	font-size: 90%;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 6px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+#page-content
+{
+	background: #ffffff;
+	border: 4px solid #33cc33;
+	margin: 0px;
+	padding: 12px;
+	position: relative;
+}
+
+#page-menu
+{
+	background: #ccffcc;
+	border: 6px solid #33cc33;
+	border-left-width: 12px;
+	border-right-width: 24px;
+	margin: 0px -66px 0px 24px;
+	padding: 12px;
+	float: right;
+}
+
+#page-toc
+{
+	background: #eeffee;
+	border: 4px solid #33cc33;
+	margin: -16px 0px 0px 12px;
+	padding: 12px;
+	float: right;
+}
+
+#page-tools
+{
+	background: #eeffee;
+	border: 4px solid #33cc33;
+	padding: 6px;
+
+/*
+	float: right;
+	margin: -22px -16px 0 0;
+*/
+	position: absolute;
+	bottom: -4px;
+	right: -4px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+a
+{
+	color: #000000;
+	padding: 3px;
+}
+
+a:hover
+{
+	color: #ffffff;
+	background: #33cc33;
+	border: 3px solid #ff6666;
+	padding: 0px;
+}
+
+/* ========================================================================== */
+
+img
+{
+	border: 0px;
+	margin: 0px;
+}
+
+pre
+{
+	background: #f8f8ff;
+	margin: 6px;
+	padding: 6px;
+	border: 1px dotted #ccc;
+	float: left;
+	clear: left;
+}
+
+code
+{
+	font-family: "Courier New", monospace;
+	font-size: 10pt;
+}
+
+hr
+{
+	height: 1px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+
+form
+{
+	display: inline
+}
+
+a.pending
+{
+	color: #993333;
+}
+
+a.url
+{
+	color: #333333;
+}
+
+a.url:hover
+{
+	color: #cccccc;
+}
+
+div.message-error
+{
+	color: #ff6633;
+	font-weight: bold;
+	margin: 8px;
+	padding: 8px;
+	border: 2px solid #ffddcc;
+}
+
+/* -- Content -- */
+
+p.content-paragraph
+{
+	text-align: justify;
+	text-indent: 12px;
+	/* border: 1px dotted #cccccc; */
+	clear: left;
+	margin-bottom: 12px;
+}
+
+/* -- Plugin wkp_Menu -- */
+
+#page-menu hr
+{
+	height: 2px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+
+#page-menu ul
+{
+	list-style-type: square;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+hr.menu {
+	height: 3px;
+	color: #999999;
+	background: #999999;
+	border: none;
+}
+
+/* -- Headings -- */
+
+h1.heading, h2.heading, h3.heading, 
+h4.heading, h5.heading, h6.heading
+{
+	border-bottom: 1px solid #666666;
+	margin-bottom: 12px;
+}
+
+h1.heading { padding-left: 12px; }
+h2.heading { padding-left: 18px; }
+h3.heading { padding-left: 24px; }
+h4.heading { padding-left: 30px; }
+h5.heading { padding-left: 36px; }
+h6.heading { padding-left: 42px; }
+
+/* -- Plugin TOC -- */
+
+div.page-toc-h1
+{
+	font-size: 95%;
+	padding-left: 0em;
+}
+
+div.page-toc-h2
+{
+	font-size: 90%;
+	padding-left: 1em;
+}
+
+div.page-toc-h3
+{
+	font-size: 85%;
+	padding-left: 2em;
+}
+
+div.page-toc-h4
+{
+	font-size: 80%;
+	padding-left: 3em;
+}
+
+div.page-toc-h5
+{
+	font-size: 75%;
+	padding-left: 4em;
+}
+
+div.page-toc-h6
+{
+	font-size: 70%;
+	padding-left: 5em;
+}
+
+/* -- END -- */
+
+/* Plugin wkp_Tables */
+
+table.wikitable {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+table.wikitable td {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+table.wikitable th {
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+  background: #eee;
+  font-weight: bold;
+  color: black;
+}
+
+th
+{
+padding-left: 1em;
+background: #333C4D;
+color: white;
+text-align: left;
+border-bottom: 1px dashed #11141A;
+}
+
+th h1 {
+/* font-family: "Futura Condensed", Futura, sans-serif !important; */
+/* font-family: Times, Serif !important; */
+font-weight: bolder;
+padding-top: 10px;
+padding-bottom: 4px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+th a {
+text-decoration: none;
+color: white !important;
+}
+
+th p {
+font-size: 85%;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 2em;
+}
+
+.pageLinks {
+padding-left: 1em;
+padding-right: 1em;
+font-size: 85%;
+margin-top: 0;
+margin-bottom: 0;
+background-color: #eee;
+color: #666;
+}
+
+.pageLinks a {
+font-weight: bold;
+text-decoration: none;
+}

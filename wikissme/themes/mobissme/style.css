@@ -1,0 +1,221 @@
+
+body
+{
+	background-color: #333333;
+	font-family: Trebuchet, "Trebuchet MS", sans-serif;
+	font-size: 9pt;
+	margin: 0px;
+	padding: 0px;
+}
+
+img
+{
+	border: 0px;
+	margin: 0px;
+}
+
+pre
+{
+	border: 1px dotted #ccc;
+	padding: 2px;
+	/* width: 640px; */
+	overflow: auto;
+}
+
+code
+{
+	font-family: "Courier New", monospace;
+	font-size: 9pt;
+}
+
+hr
+{
+	height: 1px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+
+form
+{
+	display: inline
+}
+
+a
+{
+	color: #333333;
+}
+
+a.pending
+{
+	color: #7F4736;
+}
+
+a.url
+{
+	color: #999999;
+}
+
+a:hover
+{
+	color: #57A2D4;
+	background: inherit;
+}
+
+div.message-error
+{
+	color: #ff6633;
+	font-weight: bold;
+	margin: 8px;
+	padding: 8px;
+	border: 2px solid #ffddcc !important;
+}
+
+/* -- Header -- */
+
+div.site-header
+{
+	color: #999999;
+	background: #000000;
+	padding: 4px;
+	margin: 0px;
+}
+
+div.site-header a
+{
+	color: #cccccc;
+}
+
+div.site-header h1
+{
+	font-size: 160%;
+}
+
+img.header-logo
+{
+	border: none;
+}
+
+/* -- Content -- */
+
+div.page-content
+{
+	background: #ffffff;
+	padding: 6px;
+	margin: 2px;
+	border: 1px solid #999999;
+}
+
+p.content-paragraph
+{
+	text-align: justify;
+}
+
+/* -- Plugin wkp_Menu -- */
+
+div.page-menu
+{
+	color: #000000;
+	background: #cccccc;
+	margin: 2px;
+	padding: 6px;
+	border: 1px solid #000000;
+	float: left;
+}
+
+div.page-menu hr
+{
+	height: 2px;
+	color: #666666;
+	background: #666666;
+	border: none;
+}
+
+div.page-menu ul
+{
+	list-style-type: square;
+}
+
+/* -- Headings -- */
+
+h1.heading, h2.heading, h3.heading, 
+h4.heading, h5.heading, h6.heading
+{
+	font-family: Trebuchet, "Trebuchet MS", sans-serif;
+	border-bottom: 1px solid #666666;
+}
+
+h1.heading { font-size: 150%; padding-left: 1em; }
+h2.heading { font-size: 140%; padding-left: 2em; }
+h3.heading { font-size: 130%; padding-left: 3em; }
+h4.heading { font-size: 120%; padding-left: 4em; }
+h5.heading { font-size: 110%; padding-left: 5em; }
+h6.heading { font-size: 100%; padding-left: 6em; }
+
+/* -- Plugin TOC -- */
+
+#page-toc
+{
+	color: #333333;
+	background: #cccccc;
+	margin: 2px;
+	padding: 6px;
+	border: 1px solid #999999;
+	float: left;
+	clear: both;
+}
+
+div.page-toc-h1
+{
+	font-size: 95%;
+	padding-left: 0em;
+}
+
+div.page-toc-h2
+{
+	font-size: 90%;
+	padding-left: 1em;
+}
+
+div.page-toc-h3
+{
+	font-size: 85%;
+	padding-left: 2em;
+}
+
+div.page-toc-h4
+{
+	font-size: 80%;
+	padding-left: 3em;
+}
+
+div.page-toc-h5
+{
+	font-size: 75%;
+	padding-left: 4em;
+}
+
+div.page-toc-h6
+{
+	font-size: 70%;
+	padding-left: 5em;
+}
+
+/* -- Footer -- */
+
+div.site-footer
+{
+	background: #999999;
+	margin: 2px;
+	padding: 6px;
+	border: 1px solid #666666;
+	clear: both;
+}
+
+div.site-footer *
+{
+	color: #666666;
+}
+
+/* -- END -- */
+

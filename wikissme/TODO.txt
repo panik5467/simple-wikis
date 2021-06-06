@@ -1,0 +1,198 @@
+To-do list
+
+2009-08-28
+Themes improvements
+* Create functionality that will allow the theme name parameter to be overriten
+  at run-time. (done)
+* Theme selection should be possible by adding a run-time parameter in the URL 
+  or in a form. (done)
+Architectural improvements
+* Create an URL class that will take care of composing URLs for "href" attribute
+  as well as data for fields in a form. This will help in future implementations
+  to add Clean-URLs feature.
+
+2009-08-16
+* Fix the Upload plugin. After moving the data folder it stopped working.
+
+2009-07-28
+* Add to the performance logs the destination IP address. (done)
+
+2009-07-25
+* Authentication: when no password is set in the config file no login should be 
+  allowed. (done)
+* Additional formating rule that will replace smilies/smiley with images.
+  Ref: http://en.wikipedia.org/wiki/List_of_emoticons
+* Add to the plugin RSS a parameter "active" to make it possible to turn it on
+  and off when necessary. (done)
+* Change the plugin RSS so it will be possible to store the XML ourside of the
+  website space, i.e. in another folder.
+* IMPORTANT: Debug info should be removed from the Captcha module. (done)
+
+2009-07-19
+* The history folder should reside within data folder. (done)
+* In history functionality the use of gtime variable should be implemented differently.
+* Remove the "use-datafolder" parameter from configuration files and code. (done)
+
+2009-07-15
+* Create API's that will allow to remotely work with the wiki.
+  Proposed protocols: REST and/or POST
+  Structure: folder /apis with subfolders for modules - /apis/blog/
+  Capabilities, examples:
+  - Read articles, edit/create articles
+  - Post comments
+  - Write blogs
+* Add new functionality to have a preview of a page while editing it.
+
+2009-07-12
+* Create new class Pages that represents pages currently in use.
+* Remove usage of global variable PAGES_FOLDER.
+  - That information should be moved to the Pages class.
+
+2009-07-09
+* Add localizations strings to the plugins' description.
+* Translate localization texts into other languages.
+* Remove usage of global variable PAGE_NAME. (done)
+* Remove usage of global variable PAGE_CONTENT.
+
+2009-05-31
+* Add new type of extensions - modules. (done)
+* Create Module and AbstractModule classes. (done)
+* Create new ModulesManager class. (done)
+* Create new ModulesInfo plugin. (done)
+* Convert Captcha from plugin to a module. (done)
+
+2009-05-21
+* Create new class Page that will represent a page with its attributes such as
+  name, content, startus and others. (done)
+* Create new class PageReader that will take care of page reading 
+  operations. (done)
+* Creare new class PageWriter that will take care of page writing 
+  operations. (done)
+* BUG: When writing a comment and user is not authenticated it will go to a 
+  regular edit page and uppon providing a password it will override the original 
+  page for which the comment was intended, i.e. it will destroy its content.
+  RESOLUTION: Should keep the original post attributes, such as comment flags, 
+  so it will be passed back correctly to the page writing procedures.
+  NOTE: Similar problem exists for other plugins such as Blog.
+* Replace the TIME variable with PAGE_TIME variable, for consistency. (done)
+* Repalce the CONTENT variable with PAGE_CONTENT - for consistencly. (done)
+
+2009-05-20
+* For plugins, additional functionality in the PluginsProcessor and plugins
+  triggers should be implemented that will allow raising an error in case the
+  trigger operation have failed. May be with exceptions mechanism.
+
+2009-05-18
+* In the distrib2 module, change the folder from WiKissMe to wikissme. (done)
+* Change the VERSION file to show more information.
+* Remove old, unused and commented code.
+
+2009-05-17
+* Create plugins processor - PluginsProcessor. (done)
+* Make Headings object private to WiKissMe object. (done)
+* The MENU_PAGE defiition moved into the Menu class, should be put in config.
+
+2009-05-16
+* Create new plugin for rendering CSV files as tables.
+* Set WIKI_VERSION from VERSION file. (done)
+* Add SEO capabilities.
+* Add plugin constuctor with parameter $wikissme for all plugin implementations.
+* Implement plugins_sortbyrank as a method if the class PluginsManager.
+
+2009-04-21
+* Add new trigger "read" activated before page file read. (done)
+  - This will allow certain plugins to modify the parameters (such as folders
+    and names) right before the page is loaded from file.
+* Add to plugin Recent functionality to list recently changed pages from other
+  areas, such as blogs and comments.
+
+2009-04-16
+* Plugin Localization. 2 parts: user interface and zones localization.
+  - User interface localization: replace user interface placeholders with their
+    corresponding values in the localization database.
+  - Zones localization: keep track of relationships between different pages from
+    different zones (languages) representing one and se same topic.
+* Define DATA_FOLDER variable - the base for all data. (done)
+* Fix plugin Upload, change DATA_FOLDER variable to UPLOAD_FOLDER. (done)
+* Put performance calculation results to be printed out within HTML tags.
+
+2009-04-11
+* Create plugin loader - PluginsManager. (done)
+* Plugin loader should distinguis "old style" and new plugins by their source 
+  file names, the earlier start with "wkp_" while the new ones should not have 
+  prefix at all. (done)
+  - The prefix "wkp_" should be removed from the new-style plugins source 
+    file name. (done)
+
+2009-04-07
+* Remove in config file the trailing slash in the PAGES_FOLDER and 
+  HISTORY_FOLDER parameter. (done)
+* Move all classes from wiki.php to "classes" folder. (done)
+
+2009-03-29
+* Add plugin trigger "template". (done)
+* Fix: TOC functionality. Move to a TOC plugin. (done)
+  - New class Headings implemented.
+* Implement "zones" functionality that will allow putting content in folders and
+  subfolders. This may work well for multilingual support too.
+
+2009-03-24
+* Rename PAGES_DIR to PAGES_FOLDER. (done)
+* Rename HISTORY_DIR to HISTORY_FOLDER. (done)
+
+2009-03-22
+* Move to a plugin: action=history functionality.
+* Move to a plugin: action=diff functionality.
+* Move to a plugin: action=search functionality.
+* Move to a plugin: action=recent functionality. (done)
+
+2009-03-21
+* Create a PagePreferences plugin that will change preference per page.	<-------
+* Plugins data, like pages and other files, shold be placed in separate folded, 
+  may be under the /data folder. (done)
+  (update) Plugins data could be stored infolders according to configuration.
+* Everyting should be a plugin, includeing the wiki renderer. (done)
+  (update) The process of development includes this.
+* For plugins: Add a handler that will allow to include stylesheet.	<-----------
+
+2009-03-18
+* Have the "Addin's" to print their output at the begining and at the end of 
+  formating of the text. ... may be different tags: % and $. (done)
+  (update 1) This should be implemeted in plugins.
+  (update 2) This is implemented as "inline" feature of a plugin.
+
+2009-03-15
+* Fix plugin Menu to print correct links in href's. (done)
+* Add functionality that will handle tags like %something_here%, such as TOC
+  and others. Those should be called "Addins" (singular: "Addin") since they 
+  add content to the page. Or may call the simply plugins but have the default
+  trigger named "inline" since they insert content inline.
+  - This was implemented as new trigger "inline" in plugins. (done)
+* Fix plugin Upload to print correct links in href's. (done)
+* Use urlencode for all page references, i.e. "page=" for href's in "a" tags 
+  amd enywhere else. (done)
+* Start making difference between page_name and page_title.	<-------------------
+
+2009-02-07
+* Add functionality to handle folders in pages' storage.	<-------------------
+  - this should be implemented as "zones".
+* Change in the config all "dir" definitions to "folder". (done)
+* Change in the config all folder definitions not to contain leading or 
+  trailing slash ("/"). (done)
+* Add TOC on every page that has structure, i.e. headings (h1..h5). (done)
+
+2009-02-08
+* Rename file _config.php to config.php. (done)
+* Rename the original index.php to wiki.php, the index.php could be used then 
+  for other purposes. (done)
+* Add new index.php that will manage the redirect to wiki.php file. (done)
+* Add mechanism for handling nice URLs, i.e. rewrite module.	<---------------
+* Move RSS feeds into a folder. (done)
+* Localization with constants.	(done)
+* Use urlencode for links in square brackets. (done)
+* Handle the space (" ") in page names as plus ("+") in the links.	<-----------
+* Add to all href's the name of the script, i.e. wiki.php.	<-------------------
+
+
+-----
+$Id: TODO.txt,v 1.8 2009/11/02 21:33:12 neven Exp $
