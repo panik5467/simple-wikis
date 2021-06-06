@@ -1,0 +1,73 @@
+! WiKiss installation
+
+!! Requirements
+The only requirement for ''WiKiss'' (in addition to a web server) is [PHP5].
+
+For proper management of UTF-8 coding, it is recommended that the module [mbstring|http://www.php.net/manual/ref.mbstring.php] be built with php.
+
+!! Download
+You can download:
+* A [stable version|http://download.tuxfamily.org/wikiss/] (recommended)
+* [Development|http://svn.tuxfamily.org/viewvc.cgi/trunk.tar.gz?root=wikiss_svn&view=tar] version
+Then uncompress the file to a temporary directory.
+
+!! Configuration
+Just edit ''_config.php'' and change the values at your convenience.
+See [Configuration] for more details.
+
+'''Remember to change the default password which is ''test'''''
+
+!! Installation
+Copy all the files on your web server for instance with a ftp client.
+Depending on the configuration of your provider, the access rights may not be correct. To correct this do a ''chmod 775'' on all files and directories.
+
+!! Et voila !
+Now you can [use|?Page=Utilisation] your ''WiKiss''.
+
+! Migration from WiKiss
+
+!! 0.2.1 --> 0.3
+# '''Save''' your pages, your historic and your ''_config.php''
+# Copy the file ''index.php'' to your wiki
+# If you have changed your template, a new tag may be required: '''RSS''', even [decorations|?Page=Configuration] can be added around certain tags
+# Else just copy files ''style.css'' and ''template.html''
+# Finally copy the new directory named ''plugins'' and its content
+# No change from your previous ''_config.php'' is needed
+'''Note:''' anchors format on titles has changed. So you might need to modify ones done by hand (tables of contents are not concerned)
+
+!! Generic Procedure
+Before anything else, '''save''' your pages, your historic and your ''_config.php''.
+
+If you update from an earlier version of ''WiKiss'' you have two options:
+
+Simply copy all files in the old installation. But '''attention''' you will lose pages ''Home'', ''Help'', your configuration (''_config.php'') as well as any customizations to your template.
+You can then retrieve them via your historic and your backup.
+
+This method is not recommended.
+
+To update with a better granularity, follow these steps:
+# '''Save''' your pages, your historic and your ''_config.php''
+# Copy the file ''index.php'' to your wiki
+# If you do not have customized your template, also copy ''style.css'' and ''template.html''
+# If necessary (see [Changelog]) add new parameters needed in ''_config.php''
+
+! Migration from TigerWiki
+
+Several inconsistencies are present between TigerWiki 2.2x and WiKiss 0.2:
+* The content is now full UTF-8
+* The names of the pages are now UTF-8
+* Titles syntax has changed (! Is now h1 instead of h3)
+
+An automatic conversion tool is here to help you. Here is the procedure:
+# '''Save''' your pages and historic : copy to a secure place the directories ''pages/'' and ''historique/''
+# '''Save''' your configuration file: ''_config.php''
+# Install WiKiss by following the above procedure
+# Include your pages, your history in your new facility
+# Include your variables from your configuration file (PASSWORD, LANG, LOCAL_HOUR, PAGES_DIR, BACKUP_DIR)
+# Display the conversion tool by going to http://example.com/your/wikiss/path/tigerwiki2wikiss.php. For a list of all your pages as well as their current encoding displays
+# Click ''Do It!''
+# You can also crush your old file ''Aide.txt'' with one provided by WiKiss, it contains details of the new syntax
+# You can now delete the file ''tigerwiki2wikiss.php''
+
+
+%TOC%

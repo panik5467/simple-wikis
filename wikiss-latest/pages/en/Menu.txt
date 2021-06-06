@@ -1,0 +1,7 @@
+[Home|?page=Accueil]
+[Help]
+[Table syntax|?page=AideTables]
+----
+[Upload|?action=upload]
+[Pages|?action=search]
+[Config|?action=config]

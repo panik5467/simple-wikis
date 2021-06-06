@@ -1,0 +1,67 @@
+! Hilfe zur Syntax von Tabellen
+
+!! Erstellen der Tabelle
+Die Tabelle werden mit Hilfe des Zeichens | definiert, ein entsprechender Entwurf :
+
+{{|Zelle 1|Zelle 2|
+|Zelle 3|Zelle 4|
+}}
+ergibt :
+
+|Zelle 1|Zelle 2|
+|Zelle 3|Zelle 4|
+
+Man kann auch die Zellen formatieren. Dazu nutzt man ein paar Zeichen am Anfang der Zelle :
+
+* Buchstaben gefolgt von einem Leerzeichen beeinflussen die Ausrichtung : 
+** h : wenn die Zelle zum Tabellenkopf gehört
+** t : vertikale Ausrichtung unten
+** b : vertikale Ausrichtung oben
+** l : horizontale Ausrichtung linksbündig
+** r : horizontale Ausrichtung rechtsbündig
+* zwei Zahlen können Zellen spalten- und zeilenweise verbinden :
+** die erste gibt an, wie viele Spalten verbunden werden
+** die zweite gibt an, wie viele Zeilen verbunden werden
+
+{{
+|hl Titel links|hr Titel rechts|
+|l links       |r    rechts    |
+|2 Zwei Spalten                |
+|t ,2 Zwei Zeilen| A |
+                 | B |
+|,2 Zwei Zeilen  | C |
+                 | D |}}
+
+
+|hl Titel links|hr Titel rechts|
+|l links       |r    rechts    |
+|2 Zwei Spalten                |
+|t ,2 Zwei Zeilen| A |
+                 | B |
+|,2 Zwei Zeilen  | C |
+                 | D |
+
+!! Code innerhalb der Tabelle
+|h 3 Unterstützte Syntax|
+|ht ,7 Formatierung | ^''kursiv^'' | ''kursiv'' |
+                     |  '^''fett'^''  |  '''fett'''  |
+                     |'^'^'^''fett und kursiv'^'^'^''|'''''fett und kursiv'''''|
+                     |^'--durchgestrichen--'|'--durchgestrichen--'|
+                     |^'__unterstrichen__'|'__unterstrichen__'|
+                     | Sonderzeichen | (c) (r) --> &lt;-- |
+                     |^{{code}}|{{code}}|
+|ht ,3 Links         |^[Links] | [Links] |
+                     |^[Links 2^|?page=Links]| [Links 2|?page=Links] |
+                     |^[?Wikipedia]| [?Wikipedia] |
+|ht ,4 Bilder        |^[^http://wikiss.tuxfamily.org/img/logo_100.png]|[http://wikiss.tuxfamily.org/img/logo_100.png]|
+    |^[/logo_100.png^|^http://wikiss.tuxfamily.org/]|[http://wikiss.tuxfamily.org/img/logo_100.png|http://wikiss.tuxfamily.org/]|
+    |^[^http://wikiss.tuxfamily.org/img/logo_100.png^|right] | [http://wikiss.tuxfamily.org/img/logo_100.png|right]|
+    |^[/logo_100.png^|^http://wikiss.tuxfamily.org/^|left] | [http://wikiss.tuxfamily.org/img/logo_100.png|http://wikiss.tuxfamily.org/|left]|
+
+
+
+|h 2 Nicht unterstützte Syntax|
+|Überschriften    | !! Überschrift|
+|,2 Listen | * Aufzählungsliste |
+           | # nummerierte Liste |
+|Linien    |----|

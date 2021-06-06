@@ -1,0 +1,42 @@
+
+!Bienvenue...
+!!...sur votre wiki
+
+Merci d'avoir choisi [WiKiss|http://wikiss.tuxfamily.org/].
+N'hésitez pas à parcourir cette installation par défaut, jusqu'à ce que vous vous sentiez à l'aise.
+
+!!Aide
+
+N'oubliez pas, toutes les informations sur ''WiKiss'' se trouvent sur le site http://wikiss.tuxfamily.org/
+Voyez en particulier :
+* l'[installation|http://wikiss.tuxfamily.org/?page=Installation] ;
+* la [documentation|http://wikiss.tuxfamily.org/?page=Utilisation] utilisateur ;
+* les détails sur la [configuration|http://wikiss.tuxfamily.org/?page=Configuration].
+
+Vous pouvez également obtenir de l'aide via la [liste de diffusion|http://wikiss.tuxfamily.org/?page=Listes]
+
+Pour tester l'édition et la mise en forme dans ''WiKiss'', cliquez simplement sur « '''Éditer''' » en haut de cet écran pour accéder à cette page (et la modifier). Vous pouvez aussi créer et tester via la page [BacASable].
+
+Allez voir l'[Aide] et [AideTables] pour un aperçu de toutes les possibilités. Vous pouvez toujours revenir sur cette page en cliquant sur « '''Accueil''' ».
+
+!!Nouveautés
+
+'''Attention, ceci est une version béta, il est déconseillé de l'utiliser en production'''
+
+Cette version 0.4beta1 de ''WiKiss'' apporte son lot de nouvelles fonctionnalités :
+* un mécanisme d'internationalisation de WiKiss simple ainsi qu'un plugin multilangue ([doc|http://wikiss.tuxfamily.org/?page=Langues])
+* un plugin de Menu qui permet d'avoir un menu commun à toutes vos page wiki ([doc|http://wikiss.tuxfamily.org/?page=svn:wkp_Menu])
+* un plugin d'affichage de la configuration (plugins et langues) de WiKiss ([doc|http://wikiss.tuxfamily.org/?page=svn:wkp_ListPlugins])
+* un plugin de gestion de téléchargement, cela permet d'ajouter des images ou des fichiers facilement ([doc|http://wikiss.tuxfamily.org/?page=svn:wkp_Upload])
+* un certain nombre de corrections de [bugs|http://wikiss.tuxfamily.org/bts/]
+Voyez le [Changelog|http://wikiss.tuxfamily.org/?page=Changelog] complet pour tous les détails
+
+!!Aider WiKiss
+
+Vous pouvez aider au développement de ''WiKiss'' de plusieurs manières :
+* en vous abonnant à la [liste de discutions|http://wikiss.tuxfamily.org/?page=Listes] ;
+* en rapportant des bugs via le [Bug Tracking System|http://wikiss.tuxfamily.org/bts/] ;
+* en [développant des plugins|http://wikiss.tuxfamily.org/?page=Plugin] pour ajouter de nouvelles fonctions ;
+* ...
+
+'''Amusez vous !'''

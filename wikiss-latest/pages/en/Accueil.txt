@@ -1,0 +1,41 @@
+!Welcome ...
+!!... to your wiki
+
+Thanks for choosing [WiKiss|http://wikiss.tuxfamily.org/].
+Feel free to browse the default installation, until you feel comfortable.
+
+!!Help
+
+Remember, all information on ''WiKiss'' are located on the site http://wikiss.tuxfamily.org/
+See in particular:
+* [installation|http://wikiss.tuxfamily.org/?page=Installation] ;
+* user [documentation|http://wikiss.tuxfamily.org/?page=Utilisation] ;
+* details about [configuration|http://wikiss.tuxfamily.org/?page=Configuration].
+
+You can also get help via the [mailing list|http://wikiss.tuxfamily.org/?page=Listes]
+
+To test edition and formatting of ''WiKiss'', just click on "'''Edit'''" on top of this screen to access (and modify) this page. You can also create and test via the [SandBox] page.
+
+Go see the [Help] and [AideTables] for an overview of all the possibilities. You can always return to this page by clicking on "'''Home'''"
+
+!!News
+
+'''Beware, this is a beta version. It's inadvisable for production.'''
+
+This 0.4beta1 version of ''WiKiss'' brings you some new functionalities :
+* internationalization mechanism for WiKiss and a simple multilanguage plugin ([doc|http://wikiss.tuxfamily.org/?page=Langues]) ;
+* a Menu plugin to display a common menu on every wiki pages ([doc|http://wikiss.tuxfamily.org/?page=svn:wkp_Menu]) ;
+* a plugin to display configuration (plugins and locales) ([doc|http://wikiss.tuxfamily.org/?page=svn:wkp_ListPlugins]) ;
+* an upload plugin. Allows you to easily upload files or pictures ([doc|http://wikiss.tuxfamily.org/?page=svn:wkp_Upload]) ;
+* a lot of [bug|http://wikiss.tuxfamily.org/bts/] fixes.
+See the complete [Changelog|http://wikiss.tuxfamily.org/?page=Changelog] for more details.
+
+!!Helping WiKiss
+
+You can help the ''WiKiss'' development in several ways:
+* by subscribing to the [mailing list|http://wikiss.tuxfamily.org/?page=Listes] (list is mainly in French but English is welcome) ;
+* by reporting bugs via the [Bug Tracking System|http://wikiss.tuxfamily.org/bts/] ;
+* by [developing plugins|http://wikiss.tuxfamily.org/?page=Plugin] to add some new functions ;
+* ...
+
+'''Have fun !'''
